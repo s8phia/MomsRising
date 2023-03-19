@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "MomsRising",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "MomsRising"
+	}
+}

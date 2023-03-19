@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MomsRising</title> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" 
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Nav Bar-->
+    <nav>
+        <a href=index.html>
+            <img src="Images/logo.png" alt="">
+        </a>
+        <div class="navigation">
+            <ul>
+                <i id="closemenu" class="fas fa-times"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="health.html">Health</a></li>
+                <li><a href="momhub.html">MomHub</a></li>
+            </ul>
+            <img id="menuicon" src="Images/menuicon.png" alt="">
+        </div>
+    </nav>
+
+    <!--home-->
+
+    <section id="health-home" >
+        <h2>Health Resources</h2> 
+     </section>
+
+     <section id="resources-container">
+        <div class="resources">
+            <div id="information">
+                <img src="Images/healthhospital.png">
+                <h3>Physical Health</h3>
+                <ul>
+                    <li><span style="color: var(--main-color); font-weight: bold;">Canadian Mental Health Association:</span> This organization offers mental health support and resources for all Canadians, including single mothers. They have branches across Canada that offer counselling and support groups.</li>
+                    <li><span style="color: var(--main-color); font-weight: bold;">Health Canada:</span> This government agency provides information on a range of health topics, including nutrition, mental health, and child health. They also offer information on health services and programs that are available to Canadians.</li>
+                    <li><span style="color: var(--main-color); font-weight: bold;">Canada Prenatal Nutrition Program (CPNP):</span> This is a federal program that provides funding to community-based programs to support the health and well-being of pregnant women facing challenging life circumstances. The program aims to improve access to prenatal nutrition, increase the chances of having a healthy pregnancy, and promote healthy birth outcomes.</li>
+                    <li><span style="color: var(--main-color); font-weight: bold;">Women's Shelters Canada:</span> This organization provides resources and support to women and their children who are fleeing domestic violence. They have a directory of shelters across Canada that provide safe housing and support services.</li>
+                    <li><span style="color: var(--main-color); font-weight: bold;">Canadian Red Cross:</span> This organization provides a range of health and wellness services to Canadians, including emergency services, first aid training, and community health programs. They also offer support services for refugees and new immigrants.</li>
+                  </ul>
+            </div>
+            <div id="information1">
+                <img src="Images/healthmental.png">
+                <h3>Mental Health</h3>
+                <ul>
+                    <li><span style="color: var(--main-color); font-weight: bold;">Single Moms, Fresh Start: </span> This non-profit organization offers resources and support for single mothers in Canada. They provide access to counselling services, educational resources, and job training.</li>
+                    <li><span style="color: var(--main-color); font-weight: bold;">The Single Mom's Support Network: </span> This organization offers support, advice, and resources to single mothers in Canada. They provide help with budgeting, parenting, and accessing community resources.</li>
+                    <li><span style="color: var(--main-color); font-weight: bold;">Canadian Mental Health Association: </span> This organization offers mental health support and resources for all Canadians, including single mothers. They have branches across Canada that offer counselling and support groups.</li>
+                    <li><span style="color: var(--main-color); font-weight: bold;">Kids Help Phone: </span> This organization provides free, confidential counselling and support for children and youth across Canada. They offer phone and online chat counselling services, as well as a variety of resources on mental health, relationships, and other topics.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="cate">
+            <h2>Categories</h2>
+            <hr>
+            <a href="#information">Physical Health</a>
+            <hr>
+            <a href="#information1">Mental Health</a>
+            <hr>
+        </div>
+    </section>
+    
+    <!--Credits-->
+    <footer>
+        <h5 class="credits">designed and created by Sophia Wang</h5>
+    </footer>
+
+    <!--Javascript-->
+    <script>
+        const menuIcon = document.getElementById('menuicon');
+        const closeMenu = document.getElementById('closemenu');
+        const navigation = document.querySelector('nav .navigation ul');
+
+        menuIcon.addEventListener('click', () => {
+            navigation.classList.add('active');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            navigation.classList.remove('active');
+        });
+    </script>
+    
+</body>
+</html>

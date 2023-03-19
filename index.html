@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MomsRising</title> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" 
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Nav Bar-->
+    <nav>
+        <a href=index.html>
+            <img src="Images/logo.png" alt="">
+        </a>
+        <div class="navigation">
+            <ul>
+                <i id="closemenu" class="fas fa-times"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="health.html">Health</a></li>
+                <li><a href="momhub.html">MomHub</a></li>
+            </ul>
+            <img id="menuicon" src="Images/menuicon.png" alt="">
+        </div>
+    </nav>
+
+    <!--home-->
+
+    <section id="home" >
+       <h2><span class="homename"><h1>MomsRising:</h1></span> Empowering single moms to thrive</h2> 
+       <p>MomsRising is a platform dedicated to advocating for and supporting the  well-being of single mothers and their families. We are here to remind you that it is possible to thrive and empower yourself as a mother, single or not. </p>
+        <div class="btn">
+            <a class="headerbtn" href="about.html">About Us</a>
+        </div>
+    </section>
+
+    <!--highlights-->
+
+    <Section id="highlights">
+        <h1> Seeking for Help? </h1>
+        <p>Remember, in this journey, you are not alone. MomsRising offers support on all things parenting. Here you can find…</p>
+        <div class="high-base">
+            <div class="high-box">
+                <i class="fas fa-baby"></i>
+                <h3>Help from other Moms</h3>
+                <p>The MomHub is a chatting platform where you can get support from other moms</p>
+            </div>
+            <div class="high-box">
+                <i class="fas fa-hands-helping"></i>
+                <h3>Resources</h3>
+                <p>Find a list of great resources to help you and your child's needs as a mother in Canada</p>
+            </div>
+            <div class="high-box">
+                <i class="fas fa-heart"></i>
+                <h3>Health Support</h3>
+                <p>Being a mother can be tough. We understand that sometimes you need help. Head over to health to find organizations that support your well-being</p>
+            </div>
+        </div>
+    </Section>
+
+    <!--the MomHub-->
+    <section id="homeMomHub">
+        <h1>The MomHub</h1>
+        <p>Connecting moms, one forum at a time - introducing the MomHub!</p>
+        <div class="btn">
+            <a class="homeMomHubbtn" href="momhub.html">Visit The Hub</a>
+        </div>
+        <div class="hub-box">
+            <div class="abouthub">
+                <img src="Images/askinghelp.png" alt="">
+                <h4>Ask For Help</h4>
+                <p>Ask any questions you have about parenting in the Chat</p>
+            </div>
+            <div class="abouthub">
+                <img src="Images/giveadvice.png" alt="">
+                <h4>Share Your Advice</h4>
+                <p>Give a helping hand to other moms who may be struggling</p>
+            </div>
+            <div class="abouthub">
+                <img src="Images/makefriends.png" alt="">
+                <h4>Make Friends</h4>
+                <p>There's mothers all around you. Don't be shy! Connect and get to know them</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Credits-->
+    <footer>
+        <h5 class="credits">designed and created by Sophia Wang</h5>
+    </footer>
+
+
+    <!--Javascript-->
+    <script>
+        const menuIcon = document.getElementById('menuicon');
+        const closeMenu = document.getElementById('closemenu');
+        const navigation = document.querySelector('nav .navigation ul');
+
+        menuIcon.addEventListener('click', () => {
+            navigation.classList.add('active');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            navigation.classList.remove('active');
+        });
+    </script>
+    
+</body>
+</html>

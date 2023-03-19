@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MomsRising</title> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" 
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Nav Bar-->
+    <nav>
+        <a href=index.html>
+            <img src="Images/logo.png" alt="">
+        </a>
+        <div class="navigation">
+            <ul>
+                <i id="closemenu" class="fas fa-times"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="health.html">Health</a></li>
+                <li><a href="momhub.html">MomHub</a></li>
+            </ul>
+            <img id="menuicon" src="Images/menuicon.png" alt="">
+        </div>
+    </nav>
+
+    <!--home-->
+
+    <section id="about-home" >
+       <h2>About MomsRising</h2> 
+    </section>
+
+    <section id="about-container">
+        <div class="about-image">
+            <img src="images/aboutmomimg.png" alt="">
+        </div>
+        <div class="about-text">
+            <h2>MomsRising: Ready To Rise?</h2>
+            <p>MomsRising is a website dedicated to support single moms in Canada.
+                Here, you will find a wide range of resources, tips, and advice to guide you
+                through parenthood. We believe that every mother deserves to be empowered and
+                supported, and we're committed to making that vision a reality
+                for single moms in Canada.
+            </p>
+        </div>
+    </section>
+
+    <!--mission beliefs and vision (simplified to mission)-->
+
+    <Section id="about-mission">
+        <h1> More About Us </h1>
+        <p>Remember, in this journey, you are not alone. MomsRising offers support on all things parenting. Here you can find…</p>
+        <div class="mission-base">
+            <div class="about-mission-box">
+                <i class="fas fa-cloud"></i>
+                <h3>Belief</h3>
+                <p>We believe that every mother deserves the independence to make choices that benefit her family and her own well-being. We advocate for policies and programs that empower single mothers and provide them with the support and resources they need to live happily</p>
+            </div>
+            <div class="about-mission-box">
+                <i class="fas fa-eye"></i>
+                <h3>Value</h3>
+                <p>We value social justice, economic security, and independence for single mothers. All mothers should be able to live a comfortable life with their children. </p>
+            </div>
+            <div class="about-mission-box">
+                <i class="fas fa-flag"></i>
+                <h3>Mission</h3>
+                <p>MomsRising has a mission to provide aid to all mothers in need of help. Whether that's financial, health, or just advice, we want these resources to be available to you in one single platform</p>
+            </div>
+        </div>
+    </Section>
+
+    <!--Contact-->
+    <Section id="contact">
+        <div class="contact-heading">
+            <p>Your feedback is important to us</p>
+            <h1>Contact Us</h1>
+        </div>
+        <div class="form">
+            <h3>Contact Form</h3>
+            <input type="text" placeholder="Full Name" name="" id="">
+            <input type="text" placeholder="Email Address" name="" id="">
+            <input type="text" placeholder="Comment" name="" id="">
+            <div class="btn">
+                <a class="contactbtn" href="#">Submit</a>
+            </div>
+         </div>
+    </Section>
+
+    <!--Credits-->
+    <footer>
+        <h5 class="credits">designed and created by Sophia Wang</h5>
+    </footer>
+
+
+    <!--Javascript-->
+    <script>
+        const menuIcon = document.getElementById('menuicon');
+        const closeMenu = document.getElementById('closemenu');
+        const navigation = document.querySelector('nav .navigation ul');
+
+        menuIcon.addEventListener('click', () => {
+            navigation.classList.add('active');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            navigation.classList.remove('active');
+        });
+    </script>
+    
+</body>
+</html>

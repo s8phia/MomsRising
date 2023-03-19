@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MomsRising Hackathon project</title> 
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+    <!--fontawesome icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <!--Connecting to different files-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Nav Bar-->
+    <nav>
+        <a href=index.html>
+            <img src="Images/logo.png" alt="">
+        </a>
+        <div class="navigation">
+            <ul>
+                <i id="closemenu" class="fas fa-times"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="health.html">Health</a></li>
+                <li><a href="momhub.html">MomHub</a></li>
+            </ul>
+            <img id="menuicon" src="Images/menuicon.png" alt="">
+        </div>
+    </nav>
+
+    <!--home-->
+
+    <section id="momhub-home" >
+       <h2>Welcome To The MomHub</h2> 
+    </section>
+
+      <Section id="momhub-chat-now">
+        <h1> The Perfect Place to Connect and Learn </h1>
+        <p>Not sure who to rely on? Don't worry, the moms have your back!</p>
+        <div class="momhub-base">
+          <div class="momhub-box">
+            <h3>Enter The Hub</h3>
+            <p>remember to be kind, inclusive, and respectful. We are all here to help eachother out</p>
+            <button class="momchat-btn" data-target="#parentadvice-section">Chat now</button>
+          </div>
+      </Section>
+
+      <Section id="parentadvice-section" style="display: none">
+        <div id="message-container"></div>
+        <form id="send-container">
+          <input type="text" id="message-input">
+          <button type="submit" id="send-button">Send</button>
+        </form>
+        <button id="back-btn">Back</button>
+      </Section>
+    
+    <!--Credits-->
+    <footer>
+        <h5 class="credits">designed and created by Sophia Wang</h5>
+    </footer>
+        <!--Javascript-->
+        <script>
+            // nav bar responsive menu function
+            const menuIcon = document.getElementById('menuicon');
+            const closeMenu = document.getElementById('closemenu');
+            const navigation = document.querySelector('nav .navigation ul');
+        
+            menuIcon.addEventListener('click', () => {
+                navigation.classList.add('active');
+            });
+        
+            closeMenu.addEventListener('click', () => {
+                navigation.classList.remove('active');
+            });
+        
+            // show/hide section on click for momhub chats
+            const chatButtons = document.querySelectorAll('.momchat-btn');
+            chatButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // hide the momhub chat options section
+                    const chatOptions = document.getElementById('momhub-chat-now');
+                    chatOptions.style.display = 'none';
+        
+                    // show the hidden chat sections
+                    const chatSections = document.querySelectorAll('#parentadvice-section');
+                    chatSections.forEach(section => {
+                        section.style.display = 'block';
+                    });
+                });
+            });
+        
+            // back button functionality
+            const backButton = document.getElementById('back-btn');
+            backButton.addEventListener('click', () => {
+                // show the momhub chat options section
+                const chatOptions = document.getElementById('momhub-chat-now');
+                chatOptions.style.display = 'block';
+        
+                // hide the chat sections
+                const chatSections = document.querySelectorAll('#parentadvice-section');
+                chatSections.forEach(section => {
+                    section.style.display = 'none';
+                });
+            });
+        </script>        
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MomsRising</title> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" 
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Nav Bar-->
+    <nav>
+        <a href=index.html>
+            <img src="Images/logo.png" alt="">
+        </a>
+        <div class="navigation">
+            <ul>
+                <i id="closemenu" class="fas fa-times"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="health.html">Health</a></li>
+                <li><a href="momhub.html">MomHub</a></li>
+            </ul>
+            <img id="menuicon" src="Images/menuicon.png" alt="">
+        </div>
+    </nav>
+
+    <!--home-->
+
+    <section id="resources-home" >
+        <h2>Programs And Resources</h2> 
+     </section>
+
+     <section id="resources-container">
+        <div class="resources">
+            <div id="information">
+                <img src="Images/resourcegovern.png">
+                <h3>Government Resources</h3>
+                <ul>
+                    <li><span style="color: var(--main-color); font-weight: bold;">Canada Child Benefit (CCB):</span> This is a tax-free monthly payment made to eligible families to help with the cost of raising
+                         children under the age of 18. Single moms can apply for the CCB by filling out 
+                         a form on the Canada Revenue Agency (CRA) website.</li>
+                    <li><span style="color: var(--main-color); font-weight: bold;">Employment Insurance (EI): </span> Single moms who have lost their job through no fault of their own may be eligible for EI benefits.
+                         To qualify, you must have worked a certain number of insurable hours in the past year,
+                          and be available and actively looking for work.</li>
+                    <li><span style="color: var(--main-color); font-weight: bold;">Childcare Subsidies: </span> Some provinces in Canada offer childcare subsidies to help low-income families pay for the cost of childcare. Eligibility criteria varies by province, so it's best to check with your local government to see if you qualify.
+                    </li>
+                </ul>
+            </div>
+            <div id="information1">
+                <img src="Images/resourceschool.png">
+                <h3>Education Resources</h3>
+                <ul>
+                    <li><span style="color: var(--main-color); font-weight: bold;">Canada Student Grants and Loans: </span> Single moms who are pursuing post-secondary education can apply for grants and loans from the Canadian government to help cover the costs of tuition, textbooks, and living expenses.</li>
+                    <li><span style="color: var(--main-color); font-weight: bold;"> Adult Learning and Literacy Programs:  </span> These programs provide adult learners with the skills they need to improve their literacy and numeracy skills, upgrade their education, and gain valuable job skills.</li>
+                    <li><span style="color: var(--main-color); font-weight: bold;">Second Career Program:</span> This program provides financial support to eligible individuals who are interested in pursuing a new career or upgrading their skills. Single moms who are looking to re-enter the workforce can apply for this program.</li>
+                    <li><span style="color: var(--main-color); font-weight: bold;">Indigenous Bursaries Search Tool: </span> This tool provides a comprehensive list of bursaries, scholarships, and other funding opportunities available to Indigenous students who are pursuing post-secondary education.</li>
+                    <li><span style="color: var(--main-color); font-weight: bold;">Childcare Subsidies: </span>As mentioned before, some provinces in Canada offer childcare subsidies to help low-income families pay for the cost of childcare. This can be particularly helpful for single moms who are attending school or working.</li>
+                    <li><span style="color: var(--main-color); font-weight: bold;">The Canada Learning Bond: </span> This is a program that provides eligible children with a financial incentive to start saving for their post-secondary education. Single moms can apply for this program on behalf of their children.</li>                </ul>
+            </div>
+            <div id="information2">
+                <img src="Images/resourcecharity.png">
+                <h3> Charities And Organizations</h3>
+                <ul>
+                    <li><span style="color: var(--main-color); font-weight: bold;">Single Mothers' Alliance of BC:</span> This organization is based in British Columbia and provides support, advocacy, and resources to single mothers in the province. They also offer workshops and events to help single moms build their skills and connect with other women.</li>
+                    <li><span style="color: var(--main-color); font-weight: bold;">YWCA Canada:</span> The YWCA has several programs across Canada that support single mothers, including housing programs, employment services, and parenting programs.</li>
+                    <li><span style="color: var(--main-color); font-weight: bold;">Single Parent Association of Newfoundland:</span> This organization provides resources and support to single parents in Newfoundland and Labrador, including counselling services, financial assistance, and educational programs.</li>
+                    <li><span style="color: var(--main-color); font-weight: bold;">Single Moms, Fresh Start:</span> This charity is based in Ontario and provides financial assistance to single mothers to help them cover the costs of basic necessities such as food, clothing, and housing.</li>
+                    <li><span style="color: var(--main-color); font-weight: bold;">Mom2Mom:</span> This organization is based in Calgary and provides peer support, mentorship, and resources to single moms in the city.</li>
+                    <li><span style="color: var(--main-color); font-weight: bold;">Single Moms United:</span> This organization is based in Toronto and provides support, education, and resources to single moms in the Greater Toronto Area.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="cate">
+            <h2>Categories</h2>
+            <hr>
+            <a href="#information">Government Resources</a>
+            <hr>
+            <a href="#information1">Education</a>
+            <hr>
+            <a href="#information2">Charities</a>
+        </div>
+    </section>
+    
+    <!--Credits-->
+    <footer>
+        <h5 class="credits">designed and created by Sophia Wang</h5>
+    </footer>
+
+    <!--Javascript-->
+    <script>
+        const menuIcon = document.getElementById('menuicon');
+        const closeMenu = document.getElementById('closemenu');
+        const navigation = document.querySelector('nav .navigation ul');
+
+        menuIcon.addEventListener('click', () => {
+            navigation.classList.add('active');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            navigation.classList.remove('active');
+        });
+    </script>
+    
+</body>
+</html>

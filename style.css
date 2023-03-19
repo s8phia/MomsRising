@@ -1,0 +1,667 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --bg-color: #e7e8e2;
+    --text-color: black;
+    --main-color: #e01e79;
+    --second-color: #d8d2dc;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-color);
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+span {
+    font-size: .9rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+    color: var(--main-color);
+}
+
+/* Nav Bar */
+
+nav {
+    position: fixed;
+    width: 100%;
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.10)
+}
+
+nav img{
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+nav .navigation{
+    display: flex;
+}
+
+#menuicon{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+#closemenu{
+    display: none;
+}
+
+nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation ul li{
+    list-style: none;
+    margin-left: 35px;
+}
+
+nav .navigation ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+nav .navigation ul li a:hover{
+    color: var(--main-color);
+}
+
+/*home*/
+
+#home{
+    background-image: linear-gradient(rgba(9, 5, 54, 0.1), rgba(106, 104, 143, 0.5)), 
+    url(Images/homeback.jpeg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#home h2{
+    color: var(--bg-color);
+    font-size: 2.5rem;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+#home .homename h1{
+    font-size: 3rem;
+    color: var(--bg-color);
+}
+
+#home p {
+    width: 50%;
+    color: var(--bg-color);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+#home .btn{
+    margin-top: 30px;
+}
+
+#home a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 12px 35px;
+    background: var(--bg-color);
+    font-weight: 500;
+    border-radius: 35px;
+}
+
+#home a.headerbtn{
+    color: var(--main-color);
+    background: var(--bg-color);
+    transition: 0.5s ease;
+}
+
+#home a.headerbtn:hover{
+    color: var(--bg-color);
+    background: var(--main-color);
+}
+
+/*highlights*/
+
+#highlights{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+
+#highlights .high-base{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#highlights .high-box{
+    background: var(--second-color);
+    text-align: start;
+    padding: 30px 15px;
+}
+
+#highlights .high-box i{
+    font-size: 2.3rem;
+    color: var(--bg-color);
+}
+
+#highlights .high-box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+    padding: 13px 0 7px 0;
+}
+
+#highlights .high-box p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+/*intro to momhub */
+
+#homeMomHub{
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+}
+
+#homeMomHub .btn{
+    margin-top: 30px;
+}
+
+#homeMomHub a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 12px 35px;
+    background: var(--bg-color);
+    font-weight: 500;
+    border-radius: 35px;
+}
+
+#homeMomHub a.homeMomHubbtn{
+    color: var(--main-color);
+    background: var(--second-color);
+    transition: 0.5s ease;
+}
+
+#homeMomHub a.homeMomHubbtn:hover{
+    color: var(--bg-color);
+    background: var(--main-color);
+}
+
+#homeMomHub .abouthub img{
+    width: 150px;
+    height: 150px;
+}
+
+#homeMomHub .hub-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#homeMomHub .hub-box .abouthub{
+   background: var(--second-color); 
+   padding: 30px 15px;
+}
+
+/*footer*/
+
+footer {
+    padding: 4vw;
+    color: black;
+    text-align: center;
+}
+
+/* About Main */
+
+#about-home{
+    background-image: linear-gradient(rgba(9, 5, 54, 0.1), rgba(106, 104, 143, 0.5)), 
+    url(Images/homeback1.jpg);
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#about-home h2{
+    color: var(--bg-color);
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#about-container .about-image img{
+    width: 100%;
+}
+#about-container .about-image{
+    width: 60%;
+    padding-right: 60px;
+}
+
+#about-container .about-text{
+    width: 40%;
+    padding: 60px;
+}
+
+#about-container .about-text h2{
+    color: var(--text-color);
+    font-size: 2.2rem;
+    padding-bottom: 15px;
+}
+
+#about-container .about-text p{
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+#about-container{
+    display: flex;
+    align-items: center;
+    padding: 8vw 8vw 2vw 8vw;
+}
+
+/*About Mission Belief and Value */
+#about-mission{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+
+#about-mission .mission-base{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#about-mission .about-mission-box{
+    background: var(--second-color);
+    text-align: start;
+    padding: 30px 15px;
+}
+
+#about-mission .about-mission-box i{
+    font-size: 2.3rem;
+    color: var(--bg-color);
+}
+
+#about-mission .about-mission-box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+    padding: 13px 0 7px 0;
+}
+
+#about-mission .about-mission-box p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+/*About Feedback form*/
+#contact {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #contact .contact-heading {
+    margin-bottom: 20px;
+    color: var(--main-color);
+    font-weight: 500;
+  }
+  
+  #contact .form {
+    background: var(--second-color);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 0px 8px 32px 0 rgba(31, 38, 135, 0.37);
+    margin-bottom: 20px; 
+  }
+  
+  #contact .form input {
+    margin: 15px 0;
+    padding: 15px 10px;
+    border: 1px solid var(--text-color);
+  }
+  
+
+#contact.btn{
+    margin-top: 30px;
+}
+
+#contact a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 12px 35px;
+    background: var(--bg-color);
+    font-weight: 500;
+    border-radius: 35px;
+}
+
+#contact a.contactbtn{
+    color: var(--text-color);
+    background: var(--main-color);
+    transition: 0.5s ease;
+}
+
+#contact a.contactbtn:hover{
+    color: var(--bg-color);
+    background: var(--main-color);
+}
+
+/* resources */
+#resources-home{
+    background-image: linear-gradient(rgba(9, 5, 54, 0.1), rgba(106, 104, 143, 0.5)), 
+    url(Images/homeback3.jpg);
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#resources-home h2{
+    color: var(--bg-color);
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#resources-container .resources img{
+    width: 100%;
+}
+
+#resources-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 8vw;
+}
+
+#resources-container .resources{
+    width: 60%;
+}
+
+#resources-container .resources .information h3{
+    color: var(--text-color);
+    padding: 10px 0 10px 0;
+}
+
+#resources-container .resources .information ul li{
+    color: var(--text-color);
+    padding: 15px;
+}
+
+#resources-container .cate{
+    width: 30%;
+}
+
+#resources-container .cate h2{
+    padding-bottom: 7px;
+}
+
+#resources-container .cate a{
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 500;
+    line-height: 45px;
+}
+
+/* health */
+
+/* resources */
+#health-home{
+    background-image: linear-gradient(rgba(9, 5, 54, 0.1), rgba(106, 104, 143, 0.5)), 
+    url(Images/homeback4.png);
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#health-home h2{
+    color: var(--bg-color);
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+/*momhub*/
+#momhub-home{
+    background-image: linear-gradient(rgba(9, 5, 54, 0.1), rgba(106, 104, 143, 0.5)), 
+    url(Images/homeback2.jpg);
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#momhub-home h2{
+    color: var(--bg-color);
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#momhub-chat-now{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+
+#momhub-chat-now .momhub-base{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#momhub-chat-now .momhub-box{
+    background: var(--second-color);
+    text-align: center;
+    padding: 30px 15px;
+}
+
+#momhub-chat-now .momhub-box i{
+    font-size: 2.3rem;
+    color: var(--bg-color);
+}
+
+#momhub-chat-now.momhub-box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+    padding: 13px 0 7px 0;
+    text-align: center;
+}
+
+#momhub-chat-now .momhub-box p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+#parentadvice-section{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+
+.momchat-btn {
+    margin-top: 15px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 12px 35px;
+    background: var(--bg-color);
+    font-weight: 500;
+    border-radius: 35px;
+  }
+  
+  .momchat-btn:hover {
+    background-color: var(--main-color);
+  }
+
+#message-container{
+    padding: 5vw 8vw 5vw 8vw;
+    background-color: var(--second-color);
+}
+
+#send-container{
+    padding: 5vw 8vw 5vw 8vw;
+    background-color: var(--second-color);
+}
+
+#message-container div:nth-child(2n) {
+    background-color: #d1c3da;
+  }
+
+#back-btn{
+margin-top: 15px;
+text-decoration: none;
+font-size: 0.9rem;
+padding: 12px 35px;
+background: var(--bg-color);
+font-weight: 500;
+border-radius: 35px;
+}
+#back-btn:hover {
+background-color: var(--main-color);
+}
+
+/*Mobile Responsive*/
+
+@media (max-width: 769px) {
+    nav {
+        padding: 15px 20px;
+    }
+    nav img {
+        width: 75px;
+        cursor: pointer;
+    }
+    #menuicon{
+        display: initial;
+    }
+    
+    #closemenu{
+        display: initial;
+        font-size: 1.5rem;
+        color: var(--bg-color);
+        padding: 30px 0 20px 20px;
+    }
+
+    nav .navigation ul{
+        position: absolute;
+        top: 0;
+        right: -220px;
+        width: 220px;
+        height: 100vh;
+        background: var(--second-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: 0.5s ease;
+    }
+
+    nav .navigation ul.active{
+        right: 0;
+    }
+
+    nav .navigation ul li{
+        padding: 20px 0 20px 30px;
+        margin-left: 0;
+    }
+
+    nav .navigation ul li a{
+        color: var(--text-color);
+    }
+
+    #home{
+        padding-top: 0px;
+    }
+
+    #home p{
+        width: 90%;
+    }
+
+    #highlights{
+        padding: 8vw 4vw 0 4vw;
+    }
+    #homeMomHub{
+        padding: 8vw 4vw 0 4vw;
+    }
+
+    #about-container{
+        padding: 8vw 4vw 0 4vw;
+    }
+
+    #about-container .about-image img{
+        display: none;
+    }
+
+    #about-container .about-text{
+        margin-right: 120px;
+        width: 100%;
+        text-align: center;
+    }
+    #about-mission{
+        padding: 8vw 4vw 0 4vw;
+    }
+}
+
+
+
