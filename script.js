@@ -33,5 +33,3 @@ function appendMessage(message) {
   messageContainer.append(messageElement)
 }
 
-//resource chat
-
